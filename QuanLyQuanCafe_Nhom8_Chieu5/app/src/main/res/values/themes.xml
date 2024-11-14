@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuanLyQuanCafe_Nhom8_Chieu5" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.QuanLyQuanCafe_Nhom8_Chieu5" parent="Base.Theme.QuanLyQuanCafe_Nhom8_Chieu5" />
+</resources>
