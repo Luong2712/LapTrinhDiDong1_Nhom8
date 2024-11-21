@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTrangChu"
+        android:layout_width="412dp"
+        android:layout_height="208dp"
+        android:background="@drawable/bogoc"
+        android:clipToOutline="true"
+        android:src="@drawable/trangchudep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvBanner"
+        android:layout_width="149dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:text="Coffe Garden"
+        android:textColor="@color/white"
+
+        android:textSize="35dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgTrangChu" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAll">
+
+
+        <ImageView
+            android:id="@+id/imgCf1"
+            android:layout_width="133dp"
+            android:layout_height="90dp"
+            android:src="@drawable/cf2"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+
+        <ImageView
+            android:id="@+id/imgCf2"
+            android:layout_width="133dp"
+            android:layout_height="90dp"
+            android:src="@drawable/cf5"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+
+        <ImageView
+            android:id="@+id/imgCf3"
+            android:layout_width="133dp"
+            android:layout_height="90dp"
+            android:src="@drawable/cf4"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCapuchino"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="Capuchino $10.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvAffogato"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="164dp"
+        android:gravity="center"
+        android:text="Affogato $14.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvCrema"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:text="Crema $15.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnSeeAll"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FDFBFB"
+        android:text="See all"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTrangChu" />
+
+    <Button
+        android:id="@+id/btnBestSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#FDFBFB"
+        android:text="Best Seller"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="403dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBestSeller">
+
+        <ImageView
+            android:id="@+id/imgCf4"
+            android:layout_width="133dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cf3"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+
+        <ImageView
+            android:id="@+id/imgCf5"
+            android:layout_width="133dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cf6"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+
+        <ImageView
+            android:id="@+id/imgCf6"
+            android:layout_width="133dp"
+            android:layout_height="80dp"
+            android:src="@drawable/matcha"
+            android:background="@drawable/bogoc"
+            android:clipToOutline="true"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageView
+        android:id="@+id/imgShop"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/shoppingcart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageView
+        android:id="@+id/imgLogout"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tvTurk"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center"
+        android:text="Turk $13.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tvCoffe"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="172dp"
+        android:gravity="center"
+        android:text="Coffe $8.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tvMatcha"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="Matcha $12.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
